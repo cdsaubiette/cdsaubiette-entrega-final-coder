@@ -318,4 +318,59 @@ footer .footer-tec {
   margin-top: 15%;
 }
 
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.9rem;
+  }
+  .titulo-tec {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .progreso, .prox, .cursos, .title {
+    width: 95%;
+    margin: 2% 2%;
+    padding: 2%;
+  }
+  .progreso img, .prox img, .cursos img {
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  div div p .main-section-img {
+    width: 8%;
+    border-radius: 50%;
+  }
+  .container {
+    margin-bottom: 10%;
+  }
+  .footer-tec {
+    margin-top: 15%;
+  }
+  .avatar-img {
+    width: 50%;
+  }
+}
+/* Estilos Tablets */
+@media (min-width: 768px) {
+  .progreso, .prox, .cursos, .title {
+    width: 80%;
+  }
+}
+/* Estilos Desktop */
+@media (min-width: 992px) {
+  .progreso, .prox, .cursos, .title {
+    width: 90%;
+  }
+  .progreso img, .prox img, .cursos img {
+    width: 9rem;
+    height: auto;
+    margin: 1rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
