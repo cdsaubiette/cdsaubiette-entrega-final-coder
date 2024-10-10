@@ -1,0 +1,40 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixins";
+@import "../utilidades/mediasqueris";
+
+
+.titulo {
+    text-align: center;
+    letter-spacing: 1rem;
+  }
+  
+  .card-title {
+    color: blue;
+    font-size: 3rem;
+    @include transition(color);
+  }
+  
+  .link {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    @include transition(color);
+  }
+  
+  .link:hover {
+    color: red;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    padding: 1rem;
+  }
+
+  
+.footer-proyectos {
+    margin-top: 3rem;
+}

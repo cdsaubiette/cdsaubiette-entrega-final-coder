@@ -1,0 +1,31 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixins";
+@import "../utilidades/mediasqueris";
+
+form {
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+// Estilos de inputs y textarea
+input, 
+textarea {
+    width: 100%;
+    margin: 5%;
+}
+
+// Botón enviar
+#enviar {
+    background-color: $secondary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

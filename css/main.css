@@ -1,4 +1,164 @@
-/*Reset */
+body {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 80%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 16px;
+}
+body header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #75cbc9;
+}
+body header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+body header nav .links {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+body header nav .links:hover {
+  transform: scale(1.4);
+}
+
+form {
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 5%;
+}
+
+#enviar {
+  background-color: #0093E9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.titulo {
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+.card-title {
+  color: blue;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.link {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: red;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.footer-proyectos {
+  margin-top: 3rem;
+}
+
+.main-tec {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1%;
+  padding: 1%;
+}
+.main-tec .footer-tec {
+  margin-top: 5%;
+}
+.main-tec .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-tec .title .titulo-tec {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+}
+.main-tec h3 {
+  font-size: 4vh;
+  margin: 1rem 0;
+}
+.main-tec p {
+  font-size: clamp(1rem, 3vw + 0.5rem, 1.2rem);
+  margin: 0.5rem 0;
+}
+.main-tec .main-section-img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.main-tec {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1%;
+  padding: 1%;
+}
+.main-tec .footer-tec {
+  margin-top: 5%;
+}
+.main-tec .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-tec .title .titulo-tec {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+}
+.main-tec h3 {
+  font-size: 4vh;
+  margin: 1rem 0;
+}
+.main-tec p {
+  font-size: clamp(1rem, 3vw + 0.5rem, 1.2rem);
+  margin: 0.5rem 0;
+}
+.main-tec .main-section-img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,32 +168,6 @@
   font-style: normal;
 }
 
-/* Estilos generales */
-body {
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 80%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font-size: 16px;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: #75cbc9;
-}
-
-/* Estilos del NAV */
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
 header nav ul {
   display: flex;
   list-style: none;
@@ -41,29 +175,6 @@ header nav ul {
 header nav ul li {
   padding: 0.5rem 1rem;
 }
-
-.icons {
-  max-height: 1.5rem;
-  border-radius: 2px;
-}
-
-.links {
-  color: rgb(20, 20, 20);
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  transition: transform 0.4s;
-  display: inline-block;
-}
-
-.links:hover {
-  transform: scale(1.4);
-}
-
-/*---------------------------*/
-
-/*Estilos compartidos de los HTMLs*/
 
 h1 {
   text-align: center;
@@ -81,32 +192,6 @@ h2 {
   letter-spacing: 1rem;
 }
 
-main section div, .row {
-  margin-top: 5%;
-}
-
-body section div div p {
-  text-align: justify;
-  letter-spacing: 0.3rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.avatar-img {
-  width: 120%;
-}
-
-footer {
-  background-color: #0394e8;
-  letter-spacing: 0.7rem;
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto;
-  font-weight: bold;
-}
-/*-----------------------------*/
-
-/*Estilos de TECNOLOGIAS.HTML*/
 .title {
   display: flex;
   justify-content: center;
@@ -120,29 +205,62 @@ footer {
   letter-spacing: 0.3rem;
 }
 
-h3 {
-  font-size: 4vh;
-  margin: 1rem 0;
+.iconos-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+}
+.iconos-nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.iconos-nav li {
+  margin: 0 1rem;
+}
+.iconos-nav img {
+  width: 120%;
+  height: auto;
+  transition: transform 0.5s;
+}
+.iconos-nav img:hover {
+  transform: scale(1.1);
 }
 
-p {
-  font-size: clamp(1rem, 3vw + 0.5rem, 1.2rem);
-  margin: 0.5rem 0;
+.row div p {
+  text-align: center;
+}
+.row div p img {
+  width: 3%;
 }
 
-.main-tec {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1%;
-  padding: 1%;
+.mx-auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-section-img {
-  width: 30%;
-  border-radius: 50%;
+.icons {
+  max-height: 1.5rem;
+  border-radius: 2px;
 }
 
-.progreso, .prox, .cursos {
+.links {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  transition: transform 0.4s;
+  display: inline-block;
+}
+.links:hover {
+  transform: scale(1.4);
+}
+
+.progreso,
+.prox,
+.cursos {
   width: 90%;
   padding: 1%;
   border-radius: 1%;
@@ -151,14 +269,28 @@ p {
   margin: 3%;
   margin-bottom: 2%;
 }
-
-.progreso-images, .prox-images, .cursos-images {
+.progreso .progreso-images,
+.progreso .prox-images,
+.progreso .cursos-images,
+.prox .progreso-images,
+.prox .prox-images,
+.prox .cursos-images,
+.cursos .progreso-images,
+.cursos .prox-images,
+.cursos .cursos-images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.progreso img, .prox img, .cursos img {
+.progreso .progreso-images img,
+.progreso .prox-images img,
+.progreso .cursos-images img,
+.prox .progreso-images img,
+.prox .prox-images img,
+.prox .cursos-images img,
+.cursos .progreso-images img,
+.cursos .prox-images img,
+.cursos .cursos-images img {
   width: 4rem;
   height: auto;
   margin: 1rem;
@@ -171,202 +303,19 @@ p {
   text-align: center;
 }
 
-.footer-tec{
-  margin-top: 5%;
-}
-/*--------------------------------*/
-/*Estilos de PROYECTOS.HTML*/
-.titulo {
+footer {
+  background-color: #0394e8;
+  letter-spacing: 0.7rem;
   text-align: center;
-  letter-spacing: 1rem;
-}
-
-.card-title{
-  color: blue;
-  font-size: 3rem;
-  transition: 0.3s;
-}
-
-div p{
-  font-size: 1.5rem;
-}
-
-.link {
-  color: rgb(20, 20, 20);
-  text-decoration: none;
-  font-size: 1.7rem;
-  font-weight:bold;
-  letter-spacing: 0.3rem;
-  transition: 0.3s;
-  display: inline-block;
-}
-.link:hover{
-  color: red;
-}
-
-.card {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: transparent;
   padding: 1rem;
+  margin-top: auto;
+  font-weight: bold;
 }
-
-.card-img-top {
-  max-width: 40%;
-}
-
-.no-bg {
-  background-color: transparent;
-}
-
-.footer-proyectos {
+footer .footer-proyectos {
   margin-top: 3rem;
 }
-
-/*------------------------------------*/
-/*Estilos ded CONTACTO.HTML*/
-
-form {
-  width: 80%;
+footer .footer-tec {
+  margin-top: 15%;
 }
 
-main div div form h1 {
-  text-align: center;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-form input {
-  width: 100%;
-  margin: 5%;
-}
-
-form textarea {
-  width: 100%;
-  margin: 5%;
-}
-
-form #enviar {
-  background-color: #0093E9;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.mx-auto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main div div li {
-  list-style: none;
-}
-
-/*-------------------*/
-
-/*Estilos ICONOS de CONTACTO*/
-
-.iconos-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 6rem;
-}
-
-.iconos-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-.iconos-nav li {
-  margin: 0 1rem;
-}
-
-.iconos-nav img {
-  width: 120%;
-  height: auto;
-  transition: transform 0.5s;
-}
-
-.iconos-nav img:hover {
-  transform: scale(1.1);
-}
-
-.row div p {
-  text-align: center;
-}
-
-.row div p img {
-  width: 3%;
-}
-
-/*------------------------------*/
-
-/* Estilos Mobile */
-
-@media (max-width: 767px) {
-  h1{
-    font-size: 2.9rem;
-  }
-  .titulo-tec{
-    font-size: 2.8rem;
-  }
-  h2{
-    font-size: 2.3rem;
-  }
-  h3{
-    font-size: 2.2rem;
-  }
-  .progreso, .prox, .cursos, .title {
-    width: 95%;
-    margin: 2% 2%;
-    padding: 2%;
-  }
-  .progreso img, .prox img, .cursos img {
-    width: 4rem;
-    height: auto;
-    margin: 1rem;
-  }
-  div div p .main-section-img {
-    width: 8%;
-    border-radius: 50%;
-  }
-  .container{
-    margin-bottom: 10%;
-  }
-  .footer-tec{
-    margin-top: 15%;
-  }
-
-  .avatar-img{
-    width: 50%;
-  }
-  
-}
-
-
-/* Estilos Tablets */
-@media (min-width: 768px) {
-  .progreso, .prox, .cursos, .title {
-    width: 80%;
-  }
-}
-
-
-
-/* Estilos Desktop */
-@media (min-width: 992px) {
-  .progreso, .prox, .cursos, .title {
-    width: 90%;
-  }
-  .progreso img, .prox img, .cursos img {
-    width: 9rem;
-    height: auto;
-    margin: 1rem;
-  }
-}
-
-
+/*# sourceMappingURL=main.css.map */
